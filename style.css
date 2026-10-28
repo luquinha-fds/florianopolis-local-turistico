@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 0;
+  color: #183b4e;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+
+  /* Mar em tons de azul e verde */
+  background:
+    radial-gradient(ellipse at 15% 20%, #71e3d0 0, transparent 35%),
+    radial-gradient(ellipse at 85% 75%, #2fa9c5 0, transparent 40%),
+    linear-gradient(135deg, #087eaa, #075985 55%, #06445f);
+}
+
+.container {
+  width: min(100% - 40px, 900px);
+  margin: 0 auto;
+  padding: 48px 32px;
+  background-color: #fffdf8;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 24px;
+  box-shadow: 0 18px 50px rgba(2, 35, 52, 0.35);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+figure {
+  margin: 28px 0 0;
+}
+
+figcaption {
+  margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
+
+.destino {
+  margin-top: 32px;
+}
+
+.etiqueta {
+  color: #e1624f;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer {
+  padding: 28px 0;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: min(100% - 32px, 900px);
+    padding-top: 28px;
+  }
+
+  img {
+    height: 220px;
+  }
+}
+
+/* Sombra suave na imagem principal */
+.introducao figure img {
+  box-shadow: 0 12px 30px rgba(31, 48, 63, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.introducao figure img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 38px rgba(31, 48, 63, 0.25);
+}
+
+/* Cada atração ganha aparência de cartão */
+.destino {
+  padding: 18px;
+  margin-top: 24px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 22px rgba(31, 48, 63, 0.10);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destino:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(31, 48, 63, 0.16);
+}
+
+.destino img {
+  height: 280px;
+}
+
+.destino h3 {
+  margin-top: 16px;
+  color: #263b4a;
+}
+
+/* Um detalhe colorido para destacar a seção */
+.atracoes {
+  border-top: 1px solid #d9d9d9;
+  margin-top: 32px;
+}
+
+img {
+  box-shadow: 0 12px 30px rgba(31, 48, 63, 0.35);
+}
+
+.container {
+  width: min(100% - 40px, 900px);
+  margin: 0 auto;
+}
+
